@@ -1,5 +1,12 @@
 #DDoS Attack Detection Using Machine Learning
 
+##Dataset Download
+
+Due to GitHub's file size limit, the dataset is hosted externally.
+
+[Click here to download the dataset (Google Drive)](https://drive.google.com/file/d/1ElWbS-LcLredkIvwvO5aW8bPQdHRe6CQ/view?usp=sharing) (train)
+(https://drive.google.com/file/d/1bJ-AxWRyscbnP8KiDL65_aophsD0lvAm/view?usp=sharing) (test)
+
 This project demonstrates how to detect Distributed Denial of Service (DDoS) attacks using a machine learning model trained on network traffic data.
 
 ##Project Structure
