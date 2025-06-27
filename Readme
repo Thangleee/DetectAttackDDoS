@@ -1,1 +1,68 @@
+#DDoS Attack Detection Using Machine Learning
 
+This project demonstrates how to detect Distributed Denial of Service (DDoS) attacks using a machine learning model trained on network traffic data.
+
+##Project Structure
+
+├── Detect_attack_DDoS.ipynb # Main Jupyter Notebook for model testing
+├── Requirement.txt # Required Python packages
+├── datasets/ # Folder containing training/test CSV files
+├── Readme # (Optional) old readme, replaced by this file
+
+markdown
+Copy
+Edit
+
+##Objectives
+
+- Load and preprocess network traffic data
+- Use a trained `Random Forest` model to classify DDoS and benign traffic
+- Evaluate model performance using confusion matrix and classification metrics
+
+##Installation
+
+Create a virtual environment (optional) and install dependencies:
+
+```bash
+pip install -r Requirement.txt
+Usage
+Place your test dataset in the datasets/ folder.
+
+Make sure the model file datarf_model.pkl is available (adjust the path in the notebook).
+
+Open and run Detect_attack_DDoS.ipynb step by step.
+
+Expected columns in dataset:
+Feature columns (e.g., Flow Duration, Total Fwd Packets, etc.)
+
+A Label column with values like "DDoS" or "BENIGN"
+
+Outputs
+Classification Report (precision, recall, f1-score)
+
+Confusion Matrix for visual performance assessment
+
+Example
+After running the notebook, you should see output like:
+
+markdown
+Copy
+Edit
+              precision    recall  f1-score   support
+
+       BENIGN       0.98      0.97      0.97       500
+         DDoS       0.96      0.98      0.97       480
+Notes
+The model assumes binary classification: DDoS (1) and Others (0)
+
+Columns like Flow ID, Src IP, Dst IP, and Timestamp should be dropped before prediction
+
+Future Improvements
+Expand model to detect other attack types
+
+Deploy as a real-time detection API
+
+Include more robust preprocessing and feature selection
+
+Author
+Thangleee — 2025
